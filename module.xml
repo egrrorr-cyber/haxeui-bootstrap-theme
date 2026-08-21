@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module id="haxeui-bootstrap-theme" priority="10">
+    <resources>
+        <resource path="defaults/css" prefix="styles" />
+    </resources>
+    <components>
+        <class package="bs" />
+    </components>
+    <cssExtensions>
+        <cssFunction name="rgba" call="bs.CssHelper.rgba" />
+    </cssExtensions>
+    <themes>
+        <bootstrap parent="default">
+            <var name="primary-start"   value="#3d8bfd" />
+            <var name="secondary-start" value="#7b848d" />
+            <var name="success-start"   value="#20a464" />
+            <var name="danger-start"    value="#e35d6a" />
+            <var name="warning-start"   value="#ffca2c" />
+            <var name="info-start"      value="#3dd5f3" />
+            <var name="light-start"     value="#fcfcfd" />
+            <var name="dark-start"      value="#34383c" />
+
+            <var name="primary-color" value="#0d6efd" />
+            <var name="primary-color-hover" value="#0b5ed7" />
+            <var name="primary-color-active" value="#0a58ca" />
+            <var name="secondary-color" value="#6c757d" />
+            <var name="secondary-color-hover" value="#5c636a" />
+            <var name="secondary-color-active" value="#565e64" />
+            <var name="success-color" value="#198754" />
+            <var name="success-color-hover" value="#157347" />
+            <var name="success-color-active" value="#146c43" />
+            <var name="danger-color" value="#dc3545" />
+            <var name="danger-color-hover" value="#bb2d3b" />
+            <var name="danger-color-active" value="#b02a37" />
+            <var name="warning-color" value="#ffc107" />
+            <var name="warning-color-hover" value="#ffcd39" />
+            <var name="warning-color-active" value="#ffda6a" />
+            <var name="info-color" value="#0dcaf0" />
+            <var name="info-color-hover" value="#31d2f2" />
+            <var name="info-color-active" value="#6edff6" />
+            <var name="light-color" value="#f8f9fa" />
+            <var name="dark-color" value="#212529" />
+            <var name="body-color" value="#212529" />
+            <var name="border-color" value="#dee2e6" />
+            <var name="border-radius" value="4" />
+            <var name="font-size-base" value="16" />
+            <var name="font-size-sm" value="13" />
+            <var name="font-size-lg" value="20" />
+
+            <var name="light-color-hover"  value="#f9fafb" />
+            <var name="light-color-active" value="#fafbfc" />
+            <var name="dark-color-hover"   value="#2c3034" />
+            <var name="dark-color-active"  value="#373b3e" />
+            <style resource="styles/_base.css" />
+            <style resource="styles/_buttons.css" />
+            <style resource="styles/_forms.css" />  
+            <style resource="styles/_grid.css" />
+            <style resource="styles/_components.css" />
+            <style resource="styles/_navigation.css" />
+        </bootstrap>
+
+        <dark parent="bootstrap">
+            <!-- Наши переменные -->
+            <var name="body-bg" value="#212529" />
+            <var name="body-color" value="#dee2e6" />
+            <var name="border-color" value="#495057" />
+            <var name="light-start" value="#3b4148" />
+            <var name="light-color" value="#343a40" />
+            <var name="light-color-hover" value="#3b4148" />
+            <var name="light-color-active" value="#434a51" />
+
+            <!-- Переменные дефолтной темы — переворот стандартных виджетов -->
+            <var name="default-background-color" value="#212529" />
+            <var name="solid-background-color" value="#2b3035" />
+            <var name="solid-background-color-alt" value="#2f3439" />
+            <var name="solid-background-color-hover" value="#343a40" />
+            <var name="solid-background-color-down" value="#23272b" />
+            <var name="solid-background-color-disabled" value="#2b3035" />
+            <var name="secondary-background-color" value="#343a40" />
+            <var name="tertiary-background-color" value="#2b3035" />
+            <var name="normal-text-color" value="#dee2e6" />
+            <var name="hover-text-color" value="#ffffff" />
+            <var name="down-text-color" value="#ffffff" />
+            <var name="disabled-text-color" value="#6c757d" />
+            <var name="lighter-text-color" value="#adb5bd" />
+            <var name="normal-border-color" value="#495057" />
+            <var name="hover-border-color" value="#6c757d" />
+            <var name="down-border-color" value="#495057" />
+            <var name="disabled-border-color" value="#495057" />
+            <var name="normal-background-color-start" value="#343a40" />
+            <var name="normal-background-color-end" value="#2b3035" />
+            <var name="hover-background-color-start" value="#3b4148" />
+            <var name="hover-background-color-end" value="#343a40" />
+            <var name="down-background-color-start" value="#23272b" />
+            <var name="disabled-background-color-start" value="#2b3035" />
+            <var name="disabled-background-color-end" value="#2b3035" />
+            <var name="scrollbar-background-color" value="#2b3035" />
+            <var name="scrollbar-button-color" value="#6c757d" />
+            <var name="selection-background-color" value="#0d6efd" />
+            <var name="selection-background-color-hover" value="#3d8bfd" />
+            <var name="selection-text-color" value="#ffffff" />
+            <var name="dialog-title-color" value="#dee2e6" />
+            <var name="modal-background-color" value="#000000" />
+            <var name="tooltip-background-color" value="#343a40" />
+
+            <style resource="styles/_dark.css" />
+        </dark>
+    </themes>
+</module>

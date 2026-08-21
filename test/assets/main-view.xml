@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scrollview width="100%" height="100%" contentWidth="100%" >
+    <vbox width="100%" style="padding: 20; spacing: 16">
+        <bsbutton id="themeToggle" text="Toggle theme" variant="dark" />
+        <label text="Bootstrap 5 Theme — Base Styles Showcase"
+               styleNames="h1" />
+
+        <label text="Base styles, typography and utilities check"
+               styleNames="lead text-muted" />
+
+        <horizontal-rule />
+
+        <!-- Typography -->
+        <label text="Typography" styleNames="h2" />
+
+        <label text="Heading 1 — h1" styleNames="h1" />
+        <label text="Heading 2 — h2" styleNames="h2" />
+        <label text="Heading 3 — h3" styleNames="h3" />
+        <label text="Heading 4 — h4" styleNames="h4" />
+        <label text="Heading 5 — h5" styleNames="h5" />
+        <label text="Heading 6 — h6" styleNames="h6" />
+
+        <label text="Lead paragraph — large intro text"
+               styleNames="lead" />
+
+        <label text="Muted text — subdued color"
+               styleNames="text-muted" />
+
+        <label text="Bold text" styleNames="fw-bold" />
+        <label text="Small text" styleNames="small" />
+
+        <horizontal-rule />
+
+        <!-- Text colors -->
+        <label text="Text Colors" styleNames="h2" />
+        <vbox style="spacing: 4">
+            <label text="text-primary"   styleNames="text-primary" />
+            <label text="text-secondary" styleNames="text-muted" />
+            <label text="text-success"   styleNames="text-success" />
+            <label text="text-danger"    styleNames="text-danger" />
+            <label text="text-warning"   styleNames="text-warning" />
+            <label text="text-info"      styleNames="text-info" />
+        </vbox>
+
+        <horizontal-rule />
+
+        <!-- Backgrounds -->
+        <label text="Background Colors" styleNames="h2" />
+        <hbox style="spacing: 8">
+            <vbox styleNames="bg-primary p-2 rounded" width="80" height="60">
+                <label text="Primary" />
+            </vbox>
+            <vbox styleNames="bg-secondary p-2 rounded" width="80" height="60">
+                <label text="Secondary" />
+            </vbox>
+            <vbox styleNames="bg-success p-2 rounded" width="80" height="60">
+                <label text="Success" />
+            </vbox>
+            <vbox styleNames="bg-danger p-2 rounded" width="80" height="60">
+                <label text="Danger" />
+            </vbox>
+            <vbox styleNames="bg-warning p-2 rounded" width="80" height="60">
+                <label text="Warning" />
+            </vbox>
+            <vbox styleNames="bg-light p-2 rounded border" width="80" height="60">
+                <label text="Light" />
+            </vbox>
+        </hbox>
+
+        <horizontal-rule />
+
+        <!-- Spacing -->
+        <label text="Spacing (padding/margin)" styleNames="h2" />
+        <hbox style="spacing: 8">
+            <vbox styleNames="bg-primary p-1 rounded" width="80">
+                <label text="p-1" />
+            </vbox>
+            <vbox styleNames="bg-primary p-2 rounded" width="80">
+                <label text="p-2" />
+            </vbox>
+            <vbox styleNames="bg-primary p-3 rounded" width="80">
+                <label text="p-3" />
+            </vbox>
+            <vbox styleNames="bg-primary p-4 rounded" width="80">
+                <label text="p-4" />
+            </vbox>
+            <vbox styleNames="bg-primary p-5 rounded" width="80">
+                <label text="p-5" />
+            </vbox>
+        </hbox>
+
+        <horizontal-rule />
+
+        <!-- Borders -->
+        <label text="Borders" styleNames="h2" />
+        <hbox style="spacing: 8">
+            <vbox styleNames="border p-2" width="100" height="60">
+                <label text="border" />
+            </vbox>
+            <vbox styleNames="border rounded p-2" width="100" height="60">
+                <label text="rounded" />
+            </vbox>
+            <vbox styleNames="border rounded-pill p-2" width="120" height="60">
+                <label text="rounded-pill" />
+            </vbox>
+        </hbox>
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <label text="Buttons" styleNames="h2" />
+        <hbox style="spacing: 8; vertical-align: center">
+            <button text="Primary"   styleNames="btn-primary" />
+            <button text="Secondary" styleNames="btn-secondary" />
+            <button text="Success"   styleNames="btn-success" />
+            <button text="Danger"    styleNames="btn-danger" />
+            <button text="Warning"   styleNames="btn-warning" />
+            <button text="Info"      styleNames="btn-info" />
+            <button text="Light"     styleNames="btn-light" />
+            <button text="Dark"      styleNames="btn-dark" />
+        </hbox>
+
+        <label text="Outline buttons" styleNames="h5" />
+        <hbox style="spacing: 8; vertical-align: center">
+            <button text="Primary"   styleNames="btn-outline-primary" />
+            <button text="Secondary" styleNames="btn-outline-secondary" />
+            <button text="Success"   styleNames="btn-outline-success" />
+            <button text="Danger"    styleNames="btn-outline-danger" />
+        </hbox>
+
+        <label text="Sizes" styleNames="h5" />
+        <hbox style="spacing: 8; vertical-align: center">
+            <button text="Small"   styleNames="btn-primary btn-sm" />
+            <button text="Default" styleNames="btn-primary" />
+            <button text="Large"   styleNames="btn-primary btn-lg" />
+        </hbox>
+
+        <label text="Disabled" styleNames="h5" />
+        <hbox style="spacing: 8; vertical-align: center">
+            <button text="Primary" disabled="true" styleNames="btn-primary" />
+            <button text="Outline" disabled="true" styleNames="btn-outline-primary" />
+        </hbox>
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <label text="Forms" styleNames="h2" />
+
+        <label text="Text inputs" styleNames="h5" />
+        <vbox style="spacing: 8" width="320">
+            <textfield placeholder="Default input" />
+            <textfield placeholder="Disabled input" disabled="true" />
+            <textarea placeholder="Textarea" height="80" />
+        </vbox>
+
+        <label text="Checks and radios" styleNames="h5" />
+        <vbox style="spacing: 6">
+            <checkbox text="Default checkbox" />
+            <checkbox text="Checked checkbox" selected="true" />
+            <optionbox text="Radio one" selected="true" />
+            <optionbox text="Radio two" />
+        </vbox>
+
+        <label text="Select" styleNames="h5" />
+        <dropdown width="240">
+        <data>
+            <item text="Developer" />
+            <item text="Designer" />
+            <item text="Manager" />
+            </data>
+        </dropdown>
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <label text="Grid — drag the window edge" styleNames="h2" />
+
+        <hbox styleNames="row">
+            <vbox styleNames="col-md-6 bg-primary p-3 rounded"><label text="col-md-6" /></vbox>
+            <vbox styleNames="col-md-6 bg-success p-3 rounded"><label text="col-md-6" /></vbox>
+        </hbox>
+
+        <hbox styleNames="row">
+            <vbox styleNames="col-md-4 bg-danger p-3 rounded"><label text="col-md-4" /></vbox>
+            <vbox styleNames="col-md-8 bg-warning p-3 rounded"><label text="col-md-8" /></vbox>
+        </hbox>
+
+        <hbox styleNames="row">
+            <vbox styleNames="col-6 col-md-3 bg-info p-3 rounded"><label text="md-3" /></vbox>
+            <vbox styleNames="col-6 col-md-3 bg-secondary p-3 rounded"><label text="md-3" /></vbox>
+            <vbox styleNames="col-6 col-md-3 bg-dark p-3 rounded"><label text="md-3" /></vbox>
+            <vbox styleNames="col-6 col-md-3 bg-light p-3 rounded border"><label text="md-3" /></vbox>
+        </hbox>
+
+        <hbox styleNames="row">
+            <vbox styleNames="col-12 d-md-none bg-warning p-3 rounded"><label text="Mobile only (d-md-none)" /></vbox>
+            <vbox styleNames="col-12 d-none d-md-block bg-primary p-3 rounded"><label text="Desktop only (d-md-block)" /></vbox>
+        </hbox>
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <label text="Alerts" styleNames="h2" />
+        <vbox styleNames="alert alert-primary"><label text="A simple primary alert" /></vbox>
+        <vbox styleNames="alert alert-success"><label text="Success message" /></vbox>
+        <vbox styleNames="alert alert-danger"><label text="Error! Something went wrong" /></vbox>
+
+        <label text="Badges" styleNames="h2" />
+        <hbox style="spacing: 8; vertical-align: center">
+            <label text="Primary" styleNames="badge bg-primary" />
+            <label text="Success" styleNames="badge bg-success" />
+            <label text="Danger"  styleNames="badge bg-danger" />
+            <label text="Pill"    styleNames="badge bg-info rounded-pill" />
+        </hbox>
+
+        <label text="Card" styleNames="h2" />
+        <vbox styleNames="card" width="320">
+            <vbox styleNames="card-header"><label text="Card header" /></vbox>
+            <vbox styleNames="card-body">
+                <label text="Title" styleNames="card-title" />
+                <label text="Card text with a description of the content." styleNames="card-text" />
+                <button text="More" styleNames="btn-primary" />
+            </vbox>
+            <vbox styleNames="card-footer"><label text="2 days ago" styleNames="small text-muted" /></vbox>
+        </vbox>
+
+        <label text="Breadcrumb" styleNames="h2" />
+        <hbox styleNames="breadcrumb" style="vertical-align=center">
+            <label text="Home" styleNames="link" />
+            <label text="›" styleNames="separator" />
+            <label text="Section" styleNames="link" />
+            <label text="›" styleNames="separator" />
+            <label text="Page" styleNames="active" />
+        </hbox>
+
+        <label text="Pagination" styleNames="h2" />
+        <hbox styleNames="pagination">
+            <vbox styleNames="page-item first"><button text="1" styleNames="page-link" /></vbox>
+            <vbox styleNames="page-item active"><button text="2" styleNames="page-link" /></vbox>
+            <vbox styleNames="page-item"><button text="3" styleNames="page-link" /></vbox>
+            <vbox styleNames="page-item last"><button text="›" styleNames="page-link" /></vbox>
+        </hbox>
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <hbox styleNames="navbar">
+            <label text="Bootstrap" styleNames="navbar-brand" />
+            <button text="Home"       styleNames="nav-link" onClick="trace('Home')" />
+            <button text="Components" styleNames="nav-link" onClick="trace('Components')" />
+            <button text="About"      styleNames="nav-link" onClick="trace('About')" />
+        </hbox>
+
+        <label text="Tabs" styleNames="h2" />
+        <tabview width="100%" height="180">
+            <vbox text="Home">
+                <label text="First tab content" />
+            </vbox>
+            <vbox text="Profile">
+                <label text="Second tab content" />
+            </vbox>
+            <vbox text="Settings">
+                <label text="Third tab content" />
+            </vbox>
+        </tabview>
+
+        <label text="Accordion" styleNames="h2" />
+        <accordion width="100%">
+            <vbox text="Accordion item #1">
+                <label text="First collapsible block with content." />
+            </vbox>
+            <vbox text="Accordion item #2">
+                <label text="Second collapsible block." />
+            </vbox>
+        </accordion>
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <label text="Reactstrap-style API" styleNames="h2" />
+
+        <hbox style="spacing: 8; vertical-align: center">
+            <bsbutton text="Primary" />
+            <bsbutton text="Success" variant="success" />
+            <bsbutton text="Danger"  variant="danger" />
+            <bsbutton text="Outline" variant="primary" outline="true" />
+            <bsbutton text="Large"   variant="primary" size="lg" />
+            <bsbutton text="Small"   variant="secondary" size="sm" />
+        </hbox>
+
+        <bsalert variant="info">
+            <label text="Info: components work just like in reactstrap" />
+        </bsalert>
+        <bsalert variant="warning">
+            <label text="Warning without manual styleNames" />
+        </bsalert>
+
+        <hbox style="spacing: 8; vertical-align: center">
+            <bsbadge text="New" variant="success" />
+            <bsbadge text="99"  variant="danger" pill="true" />
+            <bsbadge text="Beta" variant="info" pill="true" />
+        </hbox>
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <label text="Cards / Breadcrumb / Pagination" styleNames="h2" />
+
+        <bscard width="320">
+            <bscardheader><label text="Card header" /></bscardheader>
+            <bscardbody>
+                <bscardtitle text="Title" />
+                <bscardtext text="Card text with a description of the content." />
+                <bsbutton text="More" variant="primary" />
+            </bscardbody>
+            <bscardfooter><label text="2 days ago" styleNames="small text-muted" /></bscardfooter>
+        </bscard>
+
+        <bsbreadcrumb>
+            <bsbreadcrumbitem text="Home" />
+            <bsbreadcrumbitem text="Section" />
+            <bsbreadcrumbitem text="Page" active="true" />
+        </bsbreadcrumb>
+
+        <bspagination pages="5" current="2" />
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <label text="Grid via props" styleNames="h2" />
+
+        <bscontainer>
+            <bsrow>
+                <bscol md="6"><vbox styleNames="bg-primary p-3 rounded"><label text="md=6" /></vbox></bscol>
+                <bscol md="6"><vbox styleNames="bg-success p-3 rounded"><label text="md=6" /></vbox></bscol>
+            </bsrow>
+            <bsrow>
+                <bscol md="4"><vbox styleNames="bg-danger p-3 rounded"><label text="md=4" /></vbox></bscol>
+                <bscol md="8"><vbox styleNames="bg-warning p-3 rounded"><label text="md=8" /></vbox></bscol>
+            </bsrow>
+            <bsrow>
+                <bscol cols="6" md="3"><vbox styleNames="bg-info p-3 rounded"><label text="6/3" /></vbox></bscol>
+                <bscol cols="6" md="3"><vbox styleNames="bg-secondary p-3 rounded"><label text="6/3" /></vbox></bscol>
+                <bscol cols="6" md="3"><vbox styleNames="bg-dark p-3 rounded"><label text="6/3" /></vbox></bscol>
+                <bscol cols="6" md="3"><vbox styleNames="bg-light p-3 rounded border"><label text="6/3" /></vbox></bscol>
+            </bsrow>
+        </bscontainer>
+
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+
+        <label text="Modal / Dropdown / Tooltip" styleNames="h2" />
+
+        <hbox style="spacing: 8; vertical-align: center">
+            <bsbutton id="openModal" text="Open modal" variant="primary" />
+            <bsbutton text="Button with tooltip" variant="secondary"
+                      tooltip="Bootstrap tooltip via the tooltip attribute" />
+        </hbox>
+
+        <bsdropdown items="Developer, Designer, Manager" width="240" />
+    </vbox>
+</scrollview>

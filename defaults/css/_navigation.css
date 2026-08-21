@@ -1,0 +1,160 @@
+/* ===== Bootstrap 5 Navigation for HaxeUI ===== */
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(#000000, 0.1);
+    padding: 10px 16px;
+    spacing: 16px;
+    width: 100%;
+    vertical-align: center;
+}
+
+.navbar-brand {
+    font-bold: true;
+    font-size: 20px;
+    color: $body-color;
+}
+
+.button.nav-link {
+    background-color: #f8f9fa;
+    border: none;
+    filter: none;
+    padding: 4px 8px;
+    color: $body-color;
+}
+
+.button.nav-link:hover {
+    background-color: #f8f9fa;
+    color: $primary-color;
+}
+
+.button.nav-link:down {
+    background-color: #e9ecef;
+    color: $primary-color-hover;
+}
+
+.navbar-dark { background-color: $dark-color; }
+.navbar-dark .navbar-brand,
+.navbar-dark .button.nav-link { color: #ffffff; }
+
+/* ---------- Tabs ---------- */
+.tabview {
+    border: none;
+}
+
+.tabview-tabs {
+    background-color: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-color: $border-color;
+}
+
+.tabbar-button {
+    background-color: #ffffff;
+    border-radius: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 3px;
+    border-bottom-color: #ffffff;
+}
+
+.tabbar-button .label { color: $primary-color; }
+
+.tabbar-button:hover {
+    background-color: #f8f9fa;
+    border-bottom-color: #e9ecef;
+}
+
+.tabbar-button:hover .label { color: $primary-color-hover; }
+
+.tabbar-button-selected,
+.tabbar-button-selected:hover {
+    background-color: #ffffff;
+    border-bottom-width: 3px;
+    border-bottom-color: $primary-color;
+}
+
+.tabbar-button-selected .label,
+.tabbar-button-selected:hover .label { color: #495057; }
+
+.tabview-content {
+    background-color: #ffffff;
+    border: none;
+}
+
+/* ---------- Accordion ---------- */
+.accordion {
+    border: none;
+    padding: 0;
+    spacing: 8px;
+}
+
+.accordion-button {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 12px 16px;
+    color: $body-color;
+    font-bold: true;
+    filter: none;
+    icon-position: far-right;
+}
+
+.accordion-button:hover {
+    background-color: #f8f9fa;
+}
+
+.accordion-page {
+    width: 100%;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 16px;
+    opacity: 1;
+}
+
+.accordion-page:expanded,
+.accordion-page:collapsed {
+    animation: none;
+}
+
+.accordion-page:collapsed {
+    hidden: true;
+}
+
+/* ---------- Tabs: Bootstrap recolor of flat-tabs ---------- */
+.tabbar.flat-tabs,
+.tabview.flat-tabs > .tabbar {
+    background-color: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-color: $border-color;
+}
+
+.tabbar.flat-tabs .tabbar-button,
+.tabview.flat-tabs > .tabbar .tabbar-button {
+    background-color: none;
+    border: none;
+    filter: none;
+    padding: 8px 16px;
+    color: $primary-color;
+}
+
+.tabbar.flat-tabs .tabbar-button:hover,
+.tabview.flat-tabs > .tabbar .tabbar-button:hover {
+    background-color: none;
+    color: $primary-color-hover;
+}
+
+.tabbar.flat-tabs .tabbar-button-selected,
+.tabview.flat-tabs > .tabbar .tabbar-button-selected {
+    background-color: none;
+    border: none;
+    border-bottom: 3px solid $primary-color;
+    color: #495057;
+}
+
+.tabview.flat-tabs .tabview-content {
+    border: none;
+    background-color: #ffffff;
+    padding: 16px 4px;
+}

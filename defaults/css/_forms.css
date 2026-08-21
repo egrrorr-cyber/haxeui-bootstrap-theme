@@ -1,0 +1,131 @@
+/* ===== Bootstrap 5 Forms for HaxeUI ===== */
+
+/* ---------- Text inputs ---------- */
+.textfield, .textarea {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: $body-color;
+    filter: none;
+}
+
+.textfield:hover, .textarea:hover {
+    border-color: #adb5bd;
+}
+
+.textfield:active, .textarea:active,
+.textfield:focus, .textarea:focus {
+    border-color: #86b7fe;
+    filter: box-shadow(0, 0, #0d6efd, 0.25, 4);
+}
+
+.textfield:disabled, .textarea:disabled {
+    background-color: #e9ecef;
+    border-color: $border-color;
+    color: #6c757d;
+    opacity: 0.8;
+}
+
+/* ---------- Checkbox ---------- */
+.checkbox {
+    horizontal-spacing: 8px;
+    color: $body-color;
+    cursor: pointer;
+}
+
+.checkbox-value {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    background-color: #ffffff;
+    filter: none;
+    vertical-align: center;
+}
+
+.checkbox-value:hover {
+    border-color: #adb5bd;
+}
+
+.checkbox-value:selected {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.checkbox-label {
+    vertical-align: center;
+}
+
+.checkbox:disabled .checkbox-label {
+    color: #6c757d;
+}
+
+.checkbox-value:disabled {
+    background-color: #e9ecef;
+    border-color: $border-color;
+}
+
+/* ---------- Radio (optionbox) ---------- */
+.optionbox {
+    horizontal-spacing: 8px;
+    color: $body-color;
+    cursor: pointer;
+}
+
+.optionbox-value {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    background-color: #ffffff;
+    filter: none;
+    vertical-align: center;
+}
+
+.optionbox-value:hover {
+    border-color: #adb5bd;
+}
+
+/* Точка радиокнопки — толстое синее кольцо */
+.optionbox-value:selected {
+    background-color: #ffffff;
+    border: 6px solid $primary-color;
+}
+
+.optionbox-label {
+    vertical-align: center;
+}
+
+.optionbox-value:disabled {
+    background-color: #e9ecef;
+    border-color: $border-color;
+}
+
+/* ---------- Select (dropdown) ---------- */
+.dropdown {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: $body-color;
+    filter: none;
+}
+
+.dropdown:hover {
+    border-color: #adb5bd;
+}
+
+.dropdown:down, .dropdown:active {
+    border-color: #86b7fe;
+    filter: box-shadow(0, 0, #0d6efd, 0.25, 4);
+}
+
+.dropdown-popup {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+}
+.textfield:empty, .textarea:empty {
+    color: #6c757d;
+}

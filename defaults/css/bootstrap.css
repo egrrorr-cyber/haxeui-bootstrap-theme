@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Bootstrap 5 Theme for HaxeUI
+   Главный файл темы — импортирует все модули
+   ========================================================================== */
+
+@import "_base.css";
+/* Следующие импорты добавим на последующих шагах:
+   @import "_buttons.css";
+   @import "_forms.css";
+   @import "_grid.css";
+   @import "_navigation.css";
+   @import "_components.css";
+   @import "_utilities.css";
+*/

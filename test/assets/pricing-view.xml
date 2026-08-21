@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scrollview width="100%" height="100%" contentWidth="100%">
+    <vbox width="100%" style="padding: 20; spacing: 16">
+
+        <!-- Navbar -->
+        <hbox styleNames="navbar">
+            <label text="Pricing" styleNames="navbar-brand" />
+            <box width="100%" height="1" />
+            <button text="Features"   styleNames="nav-link" />
+            <button text="Enterprise" styleNames="nav-link" />
+            <button text="Support"    styleNames="nav-link" />
+            <button text="Pricing"    styleNames="nav-link" />
+            <bsbutton text="Sign up" variant="primary" outline="true" size="sm" />
+        </hbox>
+
+        <!-- Header -->
+        <vbox width="100%" style="spacing: 8; padding-top: 24; padding-bottom: 24">
+            <label text="Pricing" styleNames="h1"
+                   style="text-align: center; width: 100%;" />
+            <label text="Quickly build an effective pricing table for your potential customers with this Bootstrap example. We've built it with the same markup and styles as our components."
+                   styleNames="lead text-muted"
+                   style="text-align: center; width: 100%;" />
+        </vbox>
+
+        <!-- Pricing cards -->
+        <bsrow>
+            <bscol md="4">
+                <bscard>
+                    <bscardheader><label text="Free" styleNames="h5" style="text-align: center; width: 100%;" /></bscardheader>
+                    <bscardbody style="spacing: 12">
+                        <hbox style="spacing: 4; vertical-align: bottom; horizontal-align: center">
+                            <label text="$0" styleNames="h1" />
+                            <label text="/ mo" styleNames="small text-muted" />
+                        </hbox>
+                        <vbox style="spacing: 4" width="100%">
+                            <label text="10 users included" style="text-align: center; width: 100%;" />
+                            <label text="2 GB of storage" />
+                            <label text="Email support" />
+                            <label text="Help center access" />
+                        </vbox>
+                        <bsbutton text="Sign up for free" variant="primary" outline="true" size="lg" width="100%" />
+                    </bscardbody>
+                </bscard>
+            </bscol>
+
+            <bscol md="4">
+                <bscard>
+                    <bscardheader><label text="Pro" styleNames="h5" /></bscardheader>
+                    <bscardbody style="spacing: 12">
+                        <hbox style="spacing: 4; vertical-align: bottom; horizontal-align: center">
+                            <label text="$15" styleNames="h1" />
+                            <label text="/ mo" styleNames="small text-muted" />
+                        </hbox>
+                        <vbox style="spacing: 4">
+                            <label text="20 users included" />
+                            <label text="10 GB of storage" />
+                            <label text="Priority email support" />
+                            <label text="Help center access" />
+                        </vbox>
+                        <bsbutton text="Get started" variant="primary" size="lg" width="100%" />
+                    </bscardbody>
+                </bscard>
+            </bscol>
+
+            <bscol md="4">
+                <bscard>
+                    <bscardheader styleNames="card-header bg-primary">
+                        <label text="Enterprise" styleNames="h5" />
+                    </bscardheader>
+                    <bscardbody style="spacing: 12">
+                        <hbox style="spacing: 4; vertical-align: bottom; horizontal-align: center">
+                            <label text="$29" styleNames="h1" />
+                            <label text="/ mo" styleNames="small text-muted" />
+                        </hbox>
+                        <vbox style="spacing: 4">
+                            <label text="30 users included" />
+                            <label text="15 GB of storage" />
+                            <label text="Phone and email support" />
+                            <label text="Help center access" />
+                        </vbox>
+                        <bsbutton text="Contact us" variant="primary" size="lg" width="100%" />
+                    </bscardbody>
+                </bscard>
+            </bscol>
+        </bsrow>
+
+        <!-- Footer -->
+        <box height="1" width="100%" style="background-color: #dee2e6" />
+        <bsrow>
+            <bscol cols="12" md="3">
+                <label text="Pricing" styleNames="h5" />
+                <label text="Bootstrap pricing example, rebuilt for HaxeUI" styleNames="small text-muted" />
+            </bscol>
+            <bscol cols="6" md="3">
+                <label text="Features" styleNames="h5" />
+                <vbox style="spacing: 4">
+                    <label text="Cool stuff" styleNames="link" />
+                    <label text="Random feature" styleNames="link" />
+                    <label text="Team feature" styleNames="link" />
+                </vbox>
+            </bscol>
+            <bscol cols="6" md="3">
+                <label text="Resources" styleNames="h5" />
+                <vbox style="spacing: 4">
+                    <label text="Business" styleNames="link" />
+                    <label text="Education" styleNames="link" />
+                    <label text="Government" styleNames="link" />
+                </vbox>
+            </bscol>
+            <bscol cols="6" md="3">
+                <label text="About" styleNames="h5" />
+                <vbox style="spacing: 4">
+                    <label text="Company" styleNames="link" />
+                    <label text="Locations" styleNames="link" />
+                    <label text="Contact" styleNames="link" />
+                </vbox>
+            </bscol>
+        </bsrow>
+
+    </vbox>
+</scrollview>

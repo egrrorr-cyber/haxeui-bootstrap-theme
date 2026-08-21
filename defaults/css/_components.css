@@ -1,0 +1,179 @@
+/* ===== Bootstrap 5 Components for HaxeUI ===== */
+
+/* ---------- Alerts ---------- */
+.alert {
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    width: 100%;
+    spacing: 4px;
+}
+
+.alert-primary   { background-color: #cfe2ff; border-color: #b6d4fe; }
+.alert-primary .label { color: #084298; }
+.alert-success   { background-color: #d1e7dd; border-color: #badbcc; }
+.alert-success .label { color: #0f5132; }
+.alert-danger    { background-color: #f8d7da; border-color: #f5c2c7; }
+.alert-danger .label  { color: #842029; }
+.alert-warning   { background-color: #fff3cd; border-color: #ffecb5; }
+.alert-warning .label { color: #664d03; }
+.alert-info      { background-color: #cff4fc; border-color: #b6effb; }
+.alert-info .label    { color: #055160; }
+
+.alert-heading { font-bold: true; font-size: 18px; }
+
+/* ---------- Badges ----------
+   Вешаются на label: styleNames="badge bg-primary"
+   (белый текст даёт правило .bg-* .label) */
+.badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-bold: true;
+}
+.badge.rounded-pill { border-radius: 100px; }
+
+/* ---------- Cards ---------- */
+.card {
+    background-color: #ffffff;
+    border: 1px solid rgba(#000000, 0.175);
+    border-radius: 8px;
+    spacing: 0;
+    clip: true;
+}
+
+.card-header {
+    background-color: rgba(#000000, 0.03);
+    border-bottom: 1px solid rgba(#000000, 0.175);
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.card-header.bg-primary {
+    background-color: $primary-color;
+    border-bottom-color: $primary-color;
+}
+
+.card-body {
+    padding: 16px;
+    spacing: 8px;
+    width: 100%;
+}
+
+.card-title { font-bold: true; font-size: 18px; }
+.card-text  { color: #6c757d; }
+
+.card-footer {
+    background-color: rgba(#000000, 0.03);
+    border-top: 1px solid rgba(#000000, 0.175);
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.card-body > .label {
+    width: 100%;
+}
+
+
+/* ---------- Breadcrumbs ---------- */
+.breadcrumb { spacing: 8px; }
+.breadcrumb .separator { color: #6c757d; }
+.breadcrumb .active { color: #6c757d; }
+.link { color: $primary-color; font-underline: true; cursor: pointer; }
+.link:hover { color: $primary-color-hover; }
+
+/* ---------- Pagination ---------- */
+.pagination { spacing: 0; }
+
+.page-link {
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 0;
+    padding: 6px 12px;
+    color: $primary-color;
+    filter: none;
+}
+
+.page-link:hover {
+    background-color: #e9ecef;
+    border-color: $border-color;
+    color: $primary-color-hover;
+}
+
+.page-item.first .page-link {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.page-item.last .page-link {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.page-item.active .page-link {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: #ffffff;
+}
+
+/* ---------- Modal (рестайл стандартного Dialog) ---------- */
+.modal-content {
+    background-color: #ffffff;
+    border: 1px solid rgba(#000000, 0.175);
+    border-radius: 8px;
+}
+
+.modal-content .dialog-title {
+    background-color: #ffffff;
+    border-bottom: 1px solid $border-color;
+    padding: 12px 16px;
+}
+
+.modal-content .dialog-title-label {
+    color: $body-color;
+    font-bold: true;
+    font-size: 18px;
+}
+
+.modal-content .dialog-content {
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+.modal-content .dialog-footer-container {
+    background-color: #ffffff;
+}
+
+.modal-content .dialog-footer {
+    background-color: #ffffff;
+    border-top: 1px solid $border-color;
+    padding: 12px 16px;
+    horizontal-align: right;
+    spacing: 8px;
+}
+
+.btn-close {
+    background-color: none;
+    border: none;
+    filter: none;
+    padding: 0px 6px;
+    color: $body-color;
+}
+
+/* ---------- Tooltip (Bootstrap dark) ---------- */
+.tooltip {
+    background-color: $dark-color;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+.tooltip .label { color: #ffffff; }
+
+.bs-modal-overlay {
+    background-color: #000000;
+    background-opacity: 0.5;
+    horizontal-align: center;
+    vertical-align: center;
+    padding: 24px;
+}

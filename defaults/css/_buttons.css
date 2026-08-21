@@ -1,0 +1,81 @@
+/* ===== Bootstrap 5 Buttons for HaxeUI =====
+   color и font-size задаются НА КНОПКЕ — ButtonBuilder
+   каскадит их во внутреннюю label автоматически. */
+
+.button.btn,
+.button.btn-primary, .button.btn-secondary, .button.btn-success,
+.button.btn-danger, .button.btn-warning, .button.btn-info,
+.button.btn-light, .button.btn-dark,
+.button.btn-outline-primary, .button.btn-outline-secondary,
+.button.btn-outline-success, .button.btn-outline-danger {
+    border-radius: $border-radius;
+    padding: 6px 12px;
+    border-size: 1;          /* цвет рамки задают варианты */
+    filter: none;
+    cursor: pointer;
+}
+
+/* ---------- Solid ---------- */
+.button.btn-primary { background: $primary-start $primary-color vertical; border-color: $primary-color; color: #ffffff; }
+.button.btn-primary:hover { background: $primary-color-hover $primary-color-hover vertical; border-color: $primary-color-hover; }
+.button.btn-primary:down  { background: $primary-color-active $primary-color-active vertical; border-color: $primary-color-active; }
+
+.button.btn-secondary { background: $secondary-start $secondary-color vertical; border-color: $secondary-color; color: #ffffff; }
+.button.btn-secondary:hover { background: $secondary-color-hover $secondary-color-hover vertical; border-color: $secondary-color-hover; }
+.button.btn-secondary:down  { background: $secondary-color-active $secondary-color-active vertical; border-color: $secondary-color-active; }
+
+.button.btn-success { background: $success-start $success-color vertical; border-color: $success-color; color: #ffffff; }
+.button.btn-success:hover { background: $success-color-hover $success-color-hover vertical; border-color: $success-color-hover; }
+.button.btn-success:down  { background: $success-color-active $success-color-active vertical; border-color: $success-color-active; }
+
+.button.btn-danger { background: $danger-start $danger-color vertical; border-color: $danger-color; color: #ffffff; }
+.button.btn-danger:hover { background: $danger-color-hover $danger-color-hover vertical; border-color: $danger-color-hover; }
+.button.btn-danger:down  { background: $danger-color-active $danger-color-active vertical; border-color: $danger-color-active; }
+
+.button.btn-warning { background: $warning-start $warning-color vertical; border-color: $warning-color; color: $dark-color; }
+.button.btn-warning:hover { background: $warning-color-hover $warning-color-hover vertical; border-color: $warning-color-hover; }
+.button.btn-warning:down  { background: $warning-color-active $warning-color-active vertical; border-color: $warning-color-active; }
+
+.button.btn-info { background: $info-start $info-color vertical; border-color: $info-color; color: $dark-color; }
+.button.btn-info:hover { background: $info-color-hover $info-color-hover vertical; border-color: $info-color-hover; }
+.button.btn-info:down  { background: $info-color-active $info-color-active vertical; border-color: $info-color-active; }
+
+.button.btn-light { background: $light-start $light-color vertical; border-color: $light-color; color: $dark-color; }
+.button.btn-light:hover { background: $light-color-hover $light-color-hover vertical; border-color: $light-color-hover; }
+.button.btn-light:down  { background: $light-color-active $light-color-active vertical; border-color: $light-color-active; }
+
+.button.btn-dark { background: $dark-start $dark-color vertical; border-color: $dark-color; color: #ffffff; }
+.button.btn-dark:hover { background: $dark-color-hover $dark-color-hover vertical; border-color: $dark-color-hover; }
+.button.btn-dark:down  { background: $dark-color-active $dark-color-active vertical; border-color: $dark-color-active; }
+
+/* ---------- Outline ---------- */
+.button.btn-outline-primary { background-color: none; border-color: $primary-color; color: $primary-color; }
+.button.btn-outline-primary:hover { background: $primary-color $primary-color vertical; border-color: $primary-color; color: #ffffff; }
+.button.btn-outline-primary:down  { background: $primary-color-active $primary-color-active vertical; color: #ffffff; }
+
+.button.btn-outline-secondary { background-color: none; border-color: $secondary-color; color: $secondary-color; }
+.button.btn-outline-secondary:hover { background: $secondary-color $secondary-color vertical; border-color: $secondary-color; color: #ffffff; }
+
+.button.btn-outline-success { background-color: none; border-color: $success-color; color: $success-color; }
+.button.btn-outline-success:hover { background: $success-color $success-color vertical; border-color: $success-color; color: #ffffff; }
+
+.button.btn-outline-danger { background-color: none; border-color: $danger-color; color: $danger-color; }
+.button.btn-outline-danger:hover { background: $danger-color $danger-color vertical; border-color: $danger-color; color: #ffffff; }
+
+/* ---------- Sizes (font-size каскадится в label) ---------- */
+.button.btn-sm { padding: 4px 8px; font-size: $font-size-sm; }
+.button.btn-lg { padding: 8px 16px; font-size: $font-size-lg; }
+
+/* ---------- Disabled ---------- */
+.button.btn:disabled,
+.button.btn-primary:disabled, .button.btn-secondary:disabled,
+.button.btn-success:disabled, .button.btn-danger:disabled,
+.button.btn-warning:disabled, .button.btn-info:disabled,
+.button.btn-light:disabled, .button.btn-dark:disabled,
+.button.btn-outline-primary:disabled, .button.btn-outline-secondary:disabled,
+.button.btn-outline-success:disabled, .button.btn-outline-danger:disabled {
+    opacity: 0.65;
+    cursor: default;
+}
+.button.btn-primary:disabled { background: $primary-color $primary-color vertical; border-color: $primary-color; color: #ffffff; }
+.button.btn-outline-primary:disabled { background-color: none; border-color: $primary-color; color: $primary-color; }

@@ -1,0 +1,13 @@
+{
+    "name": "haxeui-bootstrap-theme",
+    "url": "https://github.com/egrrorr-cyber/haxeui-bootstrap-theme",
+    "license": "MIT",
+    "tags": ["haxeui", "bootstrap", "theme", "ui", "components", "dark-mode"],
+    "description": "Bootstrap 5 theme and reactstrap-style component library for HaxeUI: light/dark themes, 12-column responsive grid, bs.* components (button, alert, badge, card, modal, ...), custom css functions.",
+    "version": "0.1.0",
+    "releasenote": "Initial release. Tested on haxeui-openfl (HL, Linux native, HTML5); haxeui-heaps partially (fonts/rounded-pill caveats).",
+    "contributors": [""],
+    "dependencies": {
+        "haxeui-core": ""
+    }
+}
