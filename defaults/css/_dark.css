@@ -6,6 +6,7 @@
 .button.nav-link { background-color: #2b3035; color: #dee2e6; }
 .button.nav-link:hover { background-color: #2b3035; color: #3d8bfd; }
 .button.nav-link:down { background-color: #343a40; }
+.navbar-toggler { background-color: #2b3035; }   /* = navbar background in the dark theme */
 
 /* Cards */
 .card { background-color: #2b3035; border-color: #495057; }
@@ -59,7 +60,7 @@
 .dialog-footer-container { background-color: #2b3035; border-top-color: #495057; }
 .btn-close { color: #dee2e6; }
 
-/* Alerts — тёмные тонированные фоны (Bootstrap 5.3 dark) */
+/* Alerts — dark tinted backgrounds (Bootstrap 5.3 dark) */
 .alert-primary { background-color: #031633; border-color: #084298; }
 .alert-primary .label { color: #6ea8fe; }
 .alert-success { background-color: #051b11; border-color: #0f5132; }
@@ -71,7 +72,7 @@
 .alert-info { background-color: #032830; border-color: #055160; }
 .alert-info .label { color: #6edff6; }
 
-/* Прочее */
+/* Miscellaneous */
 .text-muted { color: #adb5bd; }
 .bg-light { background-color: #343a40; }
 .bg-light .label { color: #dee2e6; }
@@ -79,7 +80,7 @@
 .button.btn-light,
 .button.btn-light:hover,
 .button.btn-light:down {
-    color: #dee2e6;   /* каскад донесёт до label */
+    color: #dee2e6;   /* the cascade will carry it down to the label */
 }
 .dialog-content {
     background-color: #2b3035;
@@ -88,3 +89,30 @@
 .dialog-footer {
     background-color: #2b3035;
 }
+
+.toast { background-color: #2b3035; border-color: #495057; }
+.toast-header { background-color: #343a40; border-bottom-color: #495057; }
+.toast-title { color: #dee2e6; }
+
+.progress { background-color: #343a40; }
+
+.list-group { border-color: #495057; }
+.list-group-item { background-color: #2b3035; border-bottom-color: #495057; }
+.list-group-item:disabled { background-color: #343a40; color: #6c757d; }
+
+.list-group-item-action:hover { background-color: #343a40; }
+.list-group-item.active:hover { background-color: $primary-color; }
+
+.list-group-item-action:hover,
+.list-group-item.hovered { background-color: #3d4349; }   /* was #343a40 */
+
+.btn-close { background-color: #2b3035; color: #dee2e6; }   /* = panel background in the dark theme */
+.btn-close:hover { background-color: #3d4349; color: #ffffff; }
+.input-group-text { background-color: #343a40; border-color: #495057; }
+.jumbotron { background-color: #343a40; }
+
+.offcanvas-panel { background-color: #2b3035; border-left-color: #495057; }
+.table { border-color: #495057; }
+.table-row { border-bottom-color: #495057; }
+.table-head { background-color: #343a40; }
+.table-striped { background-color: #30363c; }   /* was rgba(#ffffff, 0.02) */

@@ -158,3 +158,34 @@
     background-color: #ffffff;
     padding: 16px 4px;
 }
+
+/* ---------- Navbar: collapse behavior ---------- */
+.navbar-expand-md {
+    flex-wrap: wrap;
+}
+
+.navbar-toggler {
+    padding: 6px 8px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    spacing: 3px;
+    background-color: $light-color;   /* = navbar background in the light theme: invisible but solid */
+    filter: none;
+}
+
+.navbar-toggler-bar {
+    width: 16px;
+    height: 2px;
+    background-color: $body-color; /* in the dark theme it becomes light automatically */
+}
+
+.navbar-collapse {
+    width: 100%;
+    spacing: 4px;
+}
+
+/* Active nav-link */
+.nav-link.active {
+    color: $primary-color;
+    font-bold: true;
+}

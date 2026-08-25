@@ -87,7 +87,7 @@
     border-color: #adb5bd;
 }
 
-/* Точка радиокнопки — толстое синее кольцо */
+/* Radio dot — a thick blue ring */
 .optionbox-value:selected {
     background-color: #ffffff;
     border: 6px solid $primary-color;

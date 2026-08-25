@@ -1,6 +1,6 @@
 /* ===== Bootstrap 5 Buttons for HaxeUI =====
-   color и font-size задаются НА КНОПКЕ — ButtonBuilder
-   каскадит их во внутреннюю label автоматически. */
+   color and font-size are set ON THE BUTTON — ButtonBuilder
+   cascades them into the inner label automatically. */
 
 .button.btn,
 .button.btn-primary, .button.btn-secondary, .button.btn-success,
@@ -10,7 +10,7 @@
 .button.btn-outline-success, .button.btn-outline-danger {
     border-radius: $border-radius;
     padding: 6px 12px;
-    border-size: 1;          /* цвет рамки задают варианты */
+    border-size: 1;          /* border color is set by the variants */
     filter: none;
     cursor: pointer;
 }
@@ -62,7 +62,7 @@
 .button.btn-outline-danger { background-color: none; border-color: $danger-color; color: $danger-color; }
 .button.btn-outline-danger:hover { background: $danger-color $danger-color vertical; border-color: $danger-color; color: #ffffff; }
 
-/* ---------- Sizes (font-size каскадится в label) ---------- */
+/* ---------- Sizes (font-size cascades into the label) ---------- */
 .button.btn-sm { padding: 4px 8px; font-size: $font-size-sm; }
 .button.btn-lg { padding: 8px 16px; font-size: $font-size-lg; }
 

@@ -53,14 +53,14 @@
             <var name="dark-color-active"  value="#373b3e" />
             <style resource="styles/_base.css" />
             <style resource="styles/_buttons.css" />
-            <style resource="styles/_forms.css" />  
+            <style resource="styles/_forms.css" />
             <style resource="styles/_grid.css" />
             <style resource="styles/_components.css" />
             <style resource="styles/_navigation.css" />
         </bootstrap>
 
         <dark parent="bootstrap">
-            <!-- Наши переменные -->
+            <!-- Theme variables -->
             <var name="body-bg" value="#212529" />
             <var name="body-color" value="#dee2e6" />
             <var name="border-color" value="#495057" />
@@ -69,7 +69,7 @@
             <var name="light-color-hover" value="#3b4148" />
             <var name="light-color-active" value="#434a51" />
 
-            <!-- Переменные дефолтной темы — переворот стандартных виджетов -->
+            <!-- Default theme variables — inversion of the standard widgets -->
             <var name="default-background-color" value="#212529" />
             <var name="solid-background-color" value="#2b3035" />
             <var name="solid-background-color-alt" value="#2f3439" />

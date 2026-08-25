@@ -23,8 +23,8 @@
 .alert-heading { font-bold: true; font-size: 18px; }
 
 /* ---------- Badges ----------
-   Вешаются на label: styleNames="badge bg-primary"
-   (белый текст даёт правило .bg-* .label) */
+   Applied to a label: styleNames="badge bg-primary"
+   (white text is provided by the .bg-* .label rule) */
 .badge {
     padding: 4px 8px;
     border-radius: 4px;
@@ -48,12 +48,6 @@
     padding: 8px 16px;
     width: 100%;
 }
-
-.card-header.bg-primary {
-    background-color: $primary-color;
-    border-bottom-color: $primary-color;
-}
-
 .card-body {
     padding: 16px;
     spacing: 8px;
@@ -73,7 +67,6 @@
 .card-body > .label {
     width: 100%;
 }
-
 
 /* ---------- Breadcrumbs ---------- */
 .breadcrumb { spacing: 8px; }
@@ -116,7 +109,7 @@
     color: #ffffff;
 }
 
-/* ---------- Modal (рестайл стандартного Dialog) ---------- */
+/* ---------- Modal (restyled standard Dialog) ---------- */
 .modal-content {
     background-color: #ffffff;
     border: 1px solid rgba(#000000, 0.175);
@@ -177,3 +170,221 @@
     vertical-align: center;
     padding: 24px;
 }
+
+/* ---------- Toast ---------- */
+.toast-container {
+    spacing: 8px;
+    padding: 16px;
+}
+
+.toast {
+    background-color: #ffffff;
+    border: 1px solid rgba(#000000, 0.1);
+    border-radius: 6px;
+    spacing: 0;
+    clip: true;
+    horizontal-align: right;
+}
+
+.toast-header {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(#000000, 0.05);
+    background-color: rgba(#f8f9fa, 0.85);
+    vertical-align: center;
+    spacing: 8px;
+}
+
+.toast-title { font-bold: true; }
+
+.toast-body { padding: 12px; }
+
+/* ---------- Progress ---------- */
+.progress {
+    background-color: #e9ecef;
+    border-radius: 4px;
+    clip: true;
+}
+
+.progress-label {
+    font-size: 11px;
+    color: #ffffff;
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+/* ---------- List group ---------- */
+.list-group {
+    spacing: 0;
+    border: 1px solid rgba(#000000, 0.125);
+    border-radius: 4px;
+    clip: true;
+}
+
+.list-group-item {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(#000000, 0.125);
+}
+
+.list-group-item.last {
+    border-bottom: none;
+}
+
+.list-group-item.active {
+    background-color: $primary-color;
+    border-bottom-color: $primary-color;
+    color: #ffffff;
+}
+
+.list-group-item:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+}
+
+.list-group-item-action {
+    pointer-events: true;
+    cursor: pointer;
+}
+
+.list-group-item-action:hover,
+.list-group-item.hovered { background-color: #e9ecef; }
+
+.list-group-item.active:hover {
+    background-color: $primary-color;
+}
+
+/* ---------- Button group ---------- */
+.btn-group { spacing: 0; }
+.btn-group .button { border-radius: 0; }
+.btn-group .button.first { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+.btn-group .button.last  { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+/* ---------- Close button ---------- */
+.btn-close {
+    background-color: none;
+    border: 1px solid rgba(#000000, 0);
+    filter: none;
+    color: #000000;
+    padding: 4px 10px;
+}
+.btn-close:hover { background-color: rgba(#000000, 0.06); color: #000000; }
+
+/* ---------- Input group ---------- */
+.input-group { spacing: 0; vertical-align: center; }
+.input-group .textfield { border-radius: 0; percent-width: 100; }
+.input-group .button { border-radius: 0; }
+.input-group .button.last { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+.input-group .button.first { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+
+.input-group-text {
+    padding: 6px 10px;
+    background-color: #e9ecef;
+    border: 1px solid $border-color;
+    color: $body-color;
+    vertical-align: center;
+}
+.input-group-text.first { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+.input-group-text.last  { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+/* ---------- Jumbotron ---------- */
+.jumbotron {
+    padding: 32px 24px;
+    spacing: 12px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+/* ---------- Offcanvas ---------- */
+.offcanvas-panel {
+    width: 320px;
+    background-color: #ffffff;
+    border-left: 1px solid $border-color;
+    padding: 16px;
+    spacing: 12px;
+    horizontal-align: right;
+}
+
+.offcanvas-header {
+    vertical-align: center;
+    spacing: 8px;
+}
+
+.offcanvas-backdrop {
+    background-color: #000000;
+    opacity: 0.5;               /* true translucency via the opacity property */
+}
+
+.btn-close {
+    background-color: #ffffff;  /* = panel background: invisible but solid -> the whole area is clickable */
+    border: 1px solid rgba(#000000, 0);
+    filter: none;
+    color: #000000;
+    padding: 4px 10px;
+}
+.btn-close:hover { background-color: #e9ecef; color: #000000; }
+
+/* ---------- Table ---------- */
+.table {
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    clip: true;
+}
+
+.table-row {
+    border-bottom: 1px solid $border-color;
+}
+
+.table-row.last {
+    border-bottom: none;
+}
+
+.table-cell {
+    padding: 8px 12px;
+}
+
+.table-head {
+    background-color: rgba(#000000, 0.03);
+}
+
+.table-head .label {
+    font-bold: true;
+}
+
+.table-striped {
+    background-color: rgba(#000000, 0.02);
+}
+
+/* ---------- Carousel ---------- */
+.carousel {
+    background-color: #212529;
+    border-radius: 6px;
+}
+
+.carousel-control {
+    width: 40px;
+    background-color: #343a40;
+    color: #ffffff;
+    border: 1px solid rgba(#000000, 0);
+    filter: none;
+    font-size: 18px;
+}
+
+.carousel-control.prev { horizontal-align: left; }
+.carousel-control.next { horizontal-align: right; }
+
+.carousel-indicators {
+    horizontal-align: center;
+    vertical-align: bottom;
+    spacing: 6px;
+    padding-bottom: 10px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #adb5bd;
+    pointer-events: true;
+}
+
+.carousel-dot.active { background-color: #ffffff; }
