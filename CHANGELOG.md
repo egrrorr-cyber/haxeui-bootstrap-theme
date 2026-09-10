@@ -37,3 +37,15 @@
 - Components CSS: alerts, badges, cards, breadcrumbs, pagination, modal,
   tooltip, toast, progress, list group, button/input groups, jumbotron,
   offcanvas, table, carousel, tabs, accordion.
+  
+## [0.2.1] - 2026-09-10
+### Added
+- `BSContainerFluid` (`<bscontainerfluid>`) — Bootstrap `.container-fluid`.
+- Block-flow emulation for direct children of containers (Bootstrap parity).
+- Utilities: `.mx-auto`, `.my-auto`, `.text-center`, `.w-100`, `.text-wrap`.
+- Bootstrap 5 container width ladder (540/720/960/1140/1320) with auto-centering, pure CSS.
+### Fixed
+- Navbar / nav-link / toggler styling incl. dark-variant states.
+- Validation loops: removed manual `syncComponentValidation()` from `BSNavbar.applyBreakpoint()`.
+### Known issues (HaxeUI gotchas)
+- See README «HaxeUI gotchas»: @media max-width loop, width-source duplication, global `*` selector.

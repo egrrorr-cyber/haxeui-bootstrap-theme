@@ -73,6 +73,34 @@ Or the component API:
 | `<bsdropdown>` | `items` | Dropdown |
 | `<bsmodal>` | `title`, `addFooter()`, `open()`, `close_()` | Modal |
 
+## Containers, block-flow and text wrapping
+
+### Containers
+- `<bscontainer>` — Bootstrap `.container`: fluid below 576px, then the fixed-width
+  ladder 540/720/960/1140/1320 (pure CSS `@media`), auto-centered.
+- `<bscontainerfluid>` — `.container-fluid`: always 100%.
+- Page-root pattern: wrap pages in `<bscontainerfluid>` to get HTML-like block flow.
+
+### Block-flow emulation
+HTML block children stretch; HaxeUI children are auto-width by default.
+The theme emulates block flow for direct children of containers
+(enumerated selector block in `_grid.css`). Children with an explicit width
+keep it — set explicit widths inside containers via inline style
+(`style="width: 320"`), not the `width="320"` attribute (stylesheet beats attributes).
+
+### Text wrapping
+Labels wrap only when their width is constrained. Use Bootstrap-named utilities:
+`<label text="..." styleNames="text-wrap w-100" />`.
+
+### HaxeUI gotchas (theme-level workarounds)
+1. `max-width` from `@media` on a percent-width component → infinite layout loop
+   (100% CPU). The container ladder therefore uses fixed `width` values.
+2. Duplicated width sources (code `percentWidth` + CSS `width`) → syncValidation loop.
+   Components keep a single width source.
+3. The universal selector `*` matches every component regardless of ancestors
+   (core `ruleMatch` returns true before the parent check), so `.x > *` rules go
+   global. Block-flow enumerates node names instead; upstream issue pending.
+   
 ### Grid example
 
 ```xml

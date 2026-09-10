@@ -53,7 +53,7 @@
             <var name="dark-color-active"  value="#373b3e" />
             <style resource="styles/_base.css" />
             <style resource="styles/_buttons.css" />
-            <style resource="styles/_forms.css" />
+            <style resource="styles/_forms.css" />  
             <style resource="styles/_grid.css" />
             <style resource="styles/_components.css" />
             <style resource="styles/_navigation.css" />

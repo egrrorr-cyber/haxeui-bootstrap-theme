@@ -4,8 +4,8 @@
     "license": "MIT",
     "tags": ["haxeui", "bootstrap", "theme", "ui", "components", "dark-mode", "grid", "responsive"],
     "description": "Bootstrap 5 theme and reactstrap-style component library for HaxeUI: light/dark themes, 12-column responsive grid, bs.* components (button, alert, badge, card, modal, ...), custom css functions.",
-    "version": "0.2.0",
-    "releasenote": "16 new components (navbar, offcanvas, toast, carousel, table, list group, progress, modal...); mobile-first 12-col grid with flex-wrap rows and sm/md/lg breakpoints; dark theme; rgba() CSS function; English docs.",
+    "version": "0.2.1",
+    "releasenote": "Containers: BSContainerFluid, Bootstrap 5 width ladder with auto-centering (pure CSS), block-flow emulation, wrap/width utilities; navbar styling fixes; validation-loop fixes. See README for HaxeUI gotchas.",
     "contributors": ["egrrorr"],
     "dependencies": {
         "haxeui-core": ""

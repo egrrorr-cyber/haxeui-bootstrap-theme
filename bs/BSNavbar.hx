@@ -91,7 +91,5 @@ class BSNavbar extends HBox {
             _collapse.layout = desktop ? new HorizontalLayout() : new VerticalLayout();
             _collapse.hidden = desktop ? false : !_collapse.expanded;
         }
-
-        syncComponentValidation();
     }
 }

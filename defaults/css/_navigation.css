@@ -14,29 +14,78 @@
     font-bold: true;
     font-size: 20px;
     color: $body-color;
+    background-color: none;
+    width: auto;
+    padding: 4px 8px;
+    border: none;
+    filter: none;
 }
 
 .button.nav-link {
-    background-color: #f8f9fa;
+    background-color: none;
     border: none;
     filter: none;
-    padding: 4px 8px;
+    padding: 8px 16px;
     color: $body-color;
+    font-bold: false;
 }
 
 .button.nav-link:hover {
-    background-color: #f8f9fa;
+    background-color: none;
     color: $primary-color;
 }
 
 .button.nav-link:down {
-    background-color: #e9ecef;
+    background-color: none;
     color: $primary-color-hover;
 }
 
-.navbar-dark { background-color: $dark-color; }
-.navbar-dark .navbar-brand,
-.navbar-dark .button.nav-link { color: #ffffff; }
+/* Active nav-link */
+.button.nav-link.active {
+    color: $primary-color;
+    font-bold: true;
+}
+
+.button.nav-link:disabled {
+    color: #6c757d;
+    opacity: 0.65;
+}
+
+/* ---------- Navbar dark variant ---------- */
+.navbar-dark {
+    background-color: $dark-color;
+    border-bottom-color: rgba(#ffffff, 0.1);
+}
+
+.navbar-dark .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-dark .button.nav-link {
+    color: rgba(#ffffff, 0.75);
+}
+
+.navbar-dark .button.nav-link:hover,
+.navbar-dark .button.nav-link:down {
+    color: #ffffff;
+}
+
+.navbar-dark .button.nav-link.active {
+    color: #ffffff;
+}
+
+.navbar-dark .button.nav-link:disabled {
+    color: rgba(#ffffff, 0.4);
+}
+
+.navbar-dark .navbar-toggler {
+    background-color: none;
+    border-color: rgba(#ffffff, 0.3);
+}
+
+.navbar-dark .navbar-toggler-bar {
+    background-color: rgba(#ffffff, 0.8);
+}
 
 /* ---------- Tabs ---------- */
 .tabview {
@@ -169,14 +218,15 @@
     border: 1px solid $border-color;
     border-radius: 4px;
     spacing: 3px;
-    background-color: $light-color;   /* = navbar background in the light theme: invisible but solid */
+    background-color: none;
     filter: none;
+    cursor: pointer;
 }
 
 .navbar-toggler-bar {
     width: 16px;
     height: 2px;
-    background-color: $body-color; /* in the dark theme it becomes light automatically */
+    background-color: $body-color;
 }
 
 .navbar-collapse {
@@ -184,8 +234,39 @@
     spacing: 4px;
 }
 
-/* Active nav-link */
-.nav-link.active {
-    color: $primary-color;
-    font-bold: true;
+/* Centered navbar layout (examples 10, 12) */
+.navbar-collapse-centered {
+    horizontal-align: center;
+    justify-content: center;
+}
+
+/* ---------- Dark theme overrides ---------- */
+.dark .navbar {
+    background-color: #2b3035;
+    border-bottom-color: rgba(#ffffff, 0.1);
+}
+
+.dark .navbar-brand {
+    color: #dee2e6;
+}
+
+.dark .button.nav-link {
+    color: rgba(#dee2e6, 0.75);
+}
+
+.dark .button.nav-link:hover,
+.dark .button.nav-link:down {
+    color: #ffffff;
+}
+
+.dark .button.nav-link.active {
+    color: #ffffff;
+}
+
+.dark .navbar-toggler {
+    border-color: rgba(#ffffff, 0.2);
+}
+
+.dark .navbar-toggler-bar {
+    background-color: rgba(#dee2e6, 0.8);
 }
