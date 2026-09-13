@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scrollview width="100%" height="100%" contentWidth="100%">
+    <vbox width="100%">
+
+        <bscontainer style="padding: 16; spacing: 16;">
+
+            <hbox>
+                <bsbutton id="backToIndex" text="← Back to examples" variant="secondary" size="sm" />
+            </hbox>
+
+            <hbox styleNames="border-bottom" percentWidth="100" style="padding-top: 12; padding-bottom: 12;">
+                <bsrow percentWidth="100" style="vertical-align: center;">
+                    <bscol cols="4"><link text="Subscribe" styleNames="text-muted" /></bscol>
+                    <bscol cols="4">
+                        <label text="Large" styleNames="blog-title text-center text-wrap w-100" style="font-size: 32px;" />
+                    </bscol>
+                    <bscol cols="4">
+                        <hbox styleNames="justify-content-end">
+                            <bsbutton text="Sign up" variant="secondary" outline="true" size="sm" />
+                        </hbox>
+                    </bscol>
+                </bsrow>
+            </hbox>
+
+            <hbox styleNames="row border-bottom" style="spacing: 12; padding-bottom: 8; vertical-align: center;">
+                <link text="World" styleNames="fw-bold" />
+                <link text="U.S." /><link text="Technology" /><link text="Design" />
+                <link text="Culture" /><link text="Business" /><link text="Politics" />
+                <link text="Opinion" /><link text="Science" /><link text="Health" />
+                <link text="Style" /><link text="Travel" />
+            </hbox>
+
+            <vbox styleNames="bg-light rounded p-5" style="spacing: 16; margin-bottom: 16;">
+                <bsrow>
+                    <bscol cols="12" lg="6">
+                        <vbox percentWidth="100" style="spacing: 12;">
+                            <label text="Title of a longer featured blog post"
+                                   styleNames="h1 blog-title fst-italic text-wrap w-100" />
+                            <label text="Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents."
+                                   styleNames="lead text-wrap w-100" />
+                            <link text="Continue reading..." styleNames="fw-bold" />
+                        </vbox>
+                    </bscol>
+                </bsrow>
+            </vbox>
+
+            <!-- ===== Card 1 ===== -->
+            <bsrow>
+                <bscol cols="12" md="6">
+                    <bscard styleNames="card mb-4">
+                        <hbox percentWidth="100">
+                            <vbox styleNames="card-body-flex" style="spacing: 8; padding: 16;">
+                                <label text="World" styleNames="text-primary fw-bold small" />
+                                <label text="Featured post" styleNames="h3 blog-title text-wrap w-100" />
+                                <label text="Nov 12" styleNames="small text-muted" />
+                                <label text="This is a wider card with supporting text below as a natural lead-in to additional content."
+                                       styleNames="card-text text-wrap w-100" />
+                                <link text="Continue reading →" />
+                            </vbox>
+                            <vbox percentWidth="34" height="250" styleNames="bg-secondary d-lg-block" style="vertical-align: center;">
+                                <label text="Thumbnail" styleNames="text-center text-wrap w-100" style="color: #eceeef;" />
+                            </vbox>
+                        </hbox>
+                    </bscard>
+                </bscol>
+
+                <!-- ===== Card 2 ===== -->
+                <bscol cols="12" md="6">
+                    <bscard styleNames="card mb-4">
+                        <hbox percentWidth="100">
+                            <vbox styleNames="card-body-flex" style="spacing: 8; padding: 16;">
+                                <label text="Design" styleNames="text-success fw-bold small" />
+                                <label text="Post title" styleNames="h3 blog-title text-wrap w-100" />
+                                <label text="Nov 11" styleNames="small text-muted" />
+                                <label text="This is a wider card with supporting text below as a natural lead-in to additional content."
+                                       styleNames="card-text text-wrap w-100" />
+                                <link text="Continue reading →" />
+                            </vbox>
+                            <vbox percentWidth="34" height="250" styleNames="bg-secondary d-lg-block" style="vertical-align: center;">
+                                <label text="Thumbnail" styleNames="text-center text-wrap w-100" style="color: #eceeef;" />
+                            </vbox>
+                        </hbox>
+                    </bscard>
+                </bscol>
+            </bsrow>
+
+            <bsrow>
+                <bscol cols="12" md="8">
+                    <vbox percentWidth="100" style="spacing: 16;">
+                        <label text="From the Firehose"
+                               styleNames="h3 blog-title fst-italic border-bottom text-wrap w-100"
+                               style="padding-bottom: 12;" />
+
+                        <vbox percentWidth="100" style="spacing: 8;">
+                            <label text="Sample blog post" styleNames="h2 text-wrap w-100" />
+                            <label text="January 1, 2021 by Mark" styleNames="small text-muted" />
+                            <label text="This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected."
+                                   styleNames="text-wrap w-100" />
+                            <box height="1" percentWidth="100" styleNames="bg-light" />
+                            <label text="This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing."
+                                   styleNames="text-wrap w-100" />
+                            <label text="Blockquotes" styleNames="h2 text-wrap w-100" />
+                            <label text="This is an example blockquote in action:" styleNames="text-wrap w-100" />
+                            <vbox percentWidth="100" styleNames="blockquote">
+                                <label text="Quoted text goes here." styleNames="text-wrap w-100" />
+                            </vbox>
+                            <label text="Example lists" styleNames="h3 text-wrap w-100" />
+                            <vbox percentWidth="100" style="spacing: 4; padding-left: 24;">
+                                <label text="• First list item" />
+                                <label text="• Second list item with a longer description" />
+                                <label text="• Third list item to close it out" />
+                            </vbox>
+                            <vbox percentWidth="100" style="spacing: 4; padding-left: 24;">
+                                <label text="1. First list item" />
+                                <label text="2. Second list item with a longer description" />
+                                <label text="3. Third list item to close it out" />
+                            </vbox>
+                            <vbox percentWidth="100" styleNames="bg-light rounded p-3">
+                                <label text="Example code block" styleNames="text-wrap w-100" />
+                            </vbox>
+                        </vbox>
+
+                        <vbox percentWidth="100" style="spacing: 8;">
+                            <label text="Another blog post" styleNames="h2 text-wrap w-100" />
+                            <label text="December 23, 2020 by Jacob" styleNames="small text-muted" />
+                            <label text="And don't forget about tables in these posts:" styleNames="text-wrap w-100" />
+                            <vbox percentWidth="100" styleNames="border-bottom" style="padding: 6;">
+                                <bsrow percentWidth="100">
+                                    <bscol cols="4"><label text="Name" styleNames="fw-bold text-wrap w-100" /></bscol>
+                                    <bscol cols="4"><label text="Upvotes" styleNames="fw-bold text-wrap w-100" /></bscol>
+                                    <bscol cols="4"><label text="Downvotes" styleNames="fw-bold text-wrap w-100" /></bscol>
+                                </bsrow>
+                            </vbox>
+                            <vbox percentWidth="100" styleNames="border-bottom" style="padding: 6;">
+                                <bsrow percentWidth="100">
+                                    <bscol cols="4"><label text="Alice" /></bscol>
+                                    <bscol cols="4"><label text="10" /></bscol>
+                                    <bscol cols="4"><label text="11" /></bscol>
+                                </bsrow>
+                            </vbox>
+                            <vbox percentWidth="100" styleNames="border-bottom" style="padding: 6;">
+                                <bsrow percentWidth="100">
+                                    <bscol cols="4"><label text="Bob" /></bscol>
+                                    <bscol cols="4"><label text="4" /></bscol>
+                                    <bscol cols="4"><label text="3" /></bscol>
+                                </bsrow>
+                            </vbox>
+                            <vbox percentWidth="100" styleNames="border-bottom" style="padding: 6;">
+                                <bsrow percentWidth="100">
+                                    <bscol cols="4"><label text="Charlie" /></bscol>
+                                    <bscol cols="4"><label text="7" /></bscol>
+                                    <bscol cols="4"><label text="9" /></bscol>
+                                </bsrow>
+                            </vbox>
+                            <vbox percentWidth="100" style="padding: 6;">
+                                <bsrow percentWidth="100">
+                                    <bscol cols="4"><label text="Totals" styleNames="fw-bold" /></bscol>
+                                    <bscol cols="4"><label text="21" styleNames="fw-bold" /></bscol>
+                                    <bscol cols="4"><label text="23" styleNames="fw-bold" /></bscol>
+                                </bsrow>
+                            </vbox>
+                        </vbox>
+
+                        <vbox percentWidth="100" style="spacing: 8;">
+                            <label text="New feature" styleNames="h2 text-wrap w-100" />
+                            <label text="December 14, 2020 by Chris" styleNames="small text-muted" />
+                            <vbox percentWidth="100" style="spacing: 4; padding-left: 24;">
+                                <label text="• First list item" />
+                                <label text="• Second list item with a longer description" />
+                                <label text="• Third list item to close it out" />
+                            </vbox>
+                        </vbox>
+
+                        <hbox style="spacing: 8; padding-top: 8;">
+                            <bsbutton text="Older" variant="primary" outline="true" styleNames="rounded-pill" />
+                            <bsbutton text="Newer" variant="secondary" outline="true" styleNames="rounded-pill" disabled="true" />
+                        </hbox>
+                    </vbox>
+                </bscol>
+
+                <bscol cols="12" md="4">
+                    <vbox percentWidth="100" style="spacing: 16;">
+                        <vbox percentWidth="100" styleNames="bg-light rounded p-4" style="spacing: 8;">
+                            <label text="About" styleNames="h4 blog-title fst-italic text-wrap w-100" />
+                            <label text="Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you."
+                                   styleNames="text-wrap w-100" />
+                        </vbox>
+
+                        <vbox percentWidth="100" style="spacing: 8;">
+                            <label text="Recent posts" styleNames="h4 blog-title fst-italic text-wrap w-100" />
+                            <hbox percentWidth="100" styleNames="border-top" style="spacing: 12; padding-top: 12; vertical-align: center;">
+                                <box width="96" height="96" styleNames="bg-secondary" />
+                                <vbox percentWidth="100" style="spacing: 4;">
+                                    <label text="Example blog post title" styleNames="h6 text-wrap w-100" />
+                                    <label text="January 15, 2024" styleNames="small text-muted" />
+                                </vbox>
+                            </hbox>
+                            <hbox percentWidth="100" styleNames="border-top" style="spacing: 12; padding-top: 12; vertical-align: center;">
+                                <box width="96" height="96" styleNames="bg-secondary" />
+                                <vbox percentWidth="100" style="spacing: 4;">
+                                    <label text="This is another blog post title" styleNames="h6 text-wrap w-100" />
+                                    <label text="January 14, 2024" styleNames="small text-muted" />
+                                </vbox>
+                            </hbox>
+                            <hbox percentWidth="100" styleNames="border-top" style="spacing: 12; padding-top: 12; vertical-align: center;">
+                                <box width="96" height="96" styleNames="bg-secondary" />
+                                <vbox percentWidth="100" style="spacing: 4;">
+                                    <label text="Longer blog post title: This one has multiple lines!" styleNames="h6 text-wrap w-100" />
+                                    <label text="January 13, 2024" styleNames="small text-muted" />
+                                </vbox>
+                            </hbox>
+                        </vbox>
+
+                        <vbox percentWidth="100" style="spacing: 4;">
+                            <label text="Archives" styleNames="h4 blog-title fst-italic text-wrap w-100" />
+                            <link text="March 2021" /><link text="February 2021" /><link text="January 2021" />
+                            <link text="December 2020" /><link text="November 2020" /><link text="October 2020" />
+                        </vbox>
+
+                        <vbox percentWidth="100" style="spacing: 4;">
+                            <label text="Elsewhere" styleNames="h4 blog-title fst-italic text-wrap w-100" />
+                            <link text="GitHub" /><link text="Social" /><link text="Facebook" />
+                        </vbox>
+                    </vbox>
+                </bscol>
+            </bsrow>
+
+        </bscontainer>
+
+        <vbox percentWidth="100" styleNames="bg-light" style="padding: 32; spacing: 8;">
+            <label text="Blog template built for Bootstrap and adapted for HaxeUI."
+                   styleNames="small text-muted text-center text-wrap w-100" />
+            <link text="Back to top" styleNames="mx-auto" />
+        </vbox>
+
+    </vbox>
+</scrollview>

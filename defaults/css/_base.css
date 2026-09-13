@@ -65,3 +65,19 @@
 /* Visibility */
 .d-none  { hidden: true; }
 .d-block { hidden: false; }
+
+/* Bootstrap blog uses a serif display face for titles */
+/* Blog example typography */
+.blog-title { font-name: Georgia; }        /* Playfair Display недоступен оффлайн */
+.fst-italic { font-italic: true; }
+.blockquote {
+    padding-left: 16px;
+    border-left-width: 4px;
+    border-left-color: $border-color;
+}
+/* Card body flexes; thumbnail (200px, lg-only) appears at >=992 */
+.post-body { width: 100%; }
+@media (min-width: 992px) { .post-body { width: 62%; } }
+
+.card-body-flex { width: 100%; }
+@media (min-width: 992px) { .card-body-flex { width: 66%; } }
